@@ -4,7 +4,7 @@ from datetime import datetime
 
 def index(request):
     text="""
-    le Texte est passé
+    Le texte est encore passé
     """
     return render(request,'polls/accueil.html',{'text':text})
 
