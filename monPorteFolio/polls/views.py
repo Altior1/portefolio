@@ -10,3 +10,11 @@ def index(request):
 
 def date_actuelle(request):
     return render(request,'polls/date.html', {'date':datetime.now()})
+
+def projets(request):
+    text="""voici la page des projets :"""
+    return render(request, 'polls/projects.html', {'text':text})
+
+def contact(request):
+    text=""" """
+    return render(request,'polls/contact.html',{'text':text})
